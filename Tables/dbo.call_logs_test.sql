@@ -46,7 +46,8 @@ CREATE TABLE [dbo].[call_logs_test]
 [callee_location] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [test_description] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [test_count] [bigint] NULL,
-[redgate] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[redgate] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[redgate1] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[call_logs_test] ADD CONSTRAINT [UK_ID_1] UNIQUE NONCLUSTERED ([id]) ON [PRIMARY]
